@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, maximum-scale=1.0" />
+    <title>caresaathi</title>
+    <link rel="icon" href="./images/favicon.jpg" type="image/png" />
+    <link
+      rel="icon"
+      href="./images/favicon.jpg/logo-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="icon"
+      href="./images/favicon.jpg/logo-512x512.png"
+      sizes="512x512"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./images/favicon.jpg/logo-180x180.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/index2.css" />
+    <link rel="stylesheet" href="style/index3.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/home button.png"
+      sizes="32x32"
+    />
+
+    <script>
+      function showPopup() {
+        // Show the overlay immediately with a fade-in effect
+        const overlay = document.getElementById("overlay");
+        overlay.style.display = "block";
+        overlay.style.opacity = "0";
+        setTimeout(() => {
+          overlay.style.opacity = "1";
+        }, 10); // Small delay for fade-in effect
+      }
+
+      function closePopup() {
+        const overlay = document.getElementById("overlay");
+        const popup = document.getElementById("popup");
+
+        // Fade out the overlay and hide the popup
+        overlay.style.opacity = "0";
+        setTimeout(() => {
+          overlay.style.display = "none";
+          popup.style.display = "none";
+        }, 300); // Matches the CSS transition duration
+      }
+
+      window.onload = function () {
+        showPopup();
+      };
+    </script>
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <!-- <a href="https://wa.me/+918591862929" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a> -->
+    <div class="whatsapp-button" id="whatsappButton">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/220/220236.png"
+        alt="WhatsApp Icon"
+      />
+    </div>
+
+    <!-- Chat popup -->
+    <div class="chat-popup" id="chatPopup" style="display: none">
+      <div class="chat-popup-header">
+        <div class="header-title">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+            alt="WhatsApp Icon"
+          />
+          WhatsApp
+        </div>
+        <button
+          class="close-button"
+          onclick="document.getElementById('chatPopup').style.display = 'none';">
+          &times;
+        </button>
+      </div>
+      <div class="chat-message">
+        Hello, we'll be happy to answer your queries. Let's chat?
+      </div>
+      <button
+        class="open-chat-button"
+        onclick="window.open('https://wa.me/+918591862929?text=Hi', '_blank')"
+      >
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/220/220236.png"
+          alt="Chat Icon"
+        />
+        Open Chat
+      </button>
+    </div>
+
+    <script>
+      const whatsappButton = document.getElementById("whatsappButton");
+      const chatPopup = document.getElementById("chatPopup");
+
+      // Toggle chat popup visibility on button click
+      whatsappButton.addEventListener("click", () => {
+        if (
+          chatPopup.style.display === "none" ||
+          chatPopup.style.display === ""
+        ) {
+          chatPopup.style.display = "block"; // Show the popup
+        } else {
+          chatPopup.style.display = "none"; // Hide the popup
+        }
+      });
+    </script>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="./index.html"><img src="./images/logo.png" alt="" /></a>
+        </div>
+
+        <nav class="links">
+          <a href="#home">Home</a>
+          <a href="#about">About us</a>
+          <a href="#approach">Our Approach</a>
+          <a href="#faqs">FAQs</a>
+          <a href="#contact">Get in Touch</a>
+        </nav>
+
+        <div class="right">
+          <a href="tel:+918591862929">
+            <i class="fas fa-phone-alt"></i> +91 8591862929
+          </a>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const links = document.querySelector(".links");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        links.classList.toggle("open");
+      });
+    </script>
+    <section id="home"></section>
+    <section class="home">
+      <h1>
+        <strong>Your Trusted Partner</strong><br />
+        in Home Healthcare
+      </h1>
+
+      <p>
+        Providing best in healthcare services at your doorstep. 
+        We provide experienced personal health care and 
+        support with compassion.
+      </p>
+        <a href="#contact" class="mybutton"> Enquire Now</a>
+    </section>
+
+      <span class="heading" style="text-align:center"><h1>WHY CHOOSE HOME CARE?</h1></span>
+
+      <div class="new-whole-container">
+        <div class="new-container">
+            <div class="care-description">
+                <p>Experience personalized home care from skilled caregivers.</p>
+                <p>Home nursing in Mumbai provides personalized, one-on-one care ensuring faster recovery in the comfort of home, surrounded by love one.</p>
+                <p>Patients heal better in the comfort of their own homes, surrounded by loved ones.</p>
+            </div>
+            <div class="care-points">
+                <div class="care-bullet-point">
+                    <img src="./images/1.png" />
+                    <span>Comfort &amp; Familiarity </span>
+                </div>
+                <div class="care-bullet-point">
+                    <img src="./images/2.png" />
+                    <span>Convenience</span>
+                </div>
+                <div class="care-bullet-point">
+                    <img src="./images/3.png" />
+                    <span>Personalized Attention</span>
+                </div>
+                <div class="care-bullet-point">
+                    <img src="./images/4.png" />
+                    <span>Affordable Home Care</span>
+                </div>
+            </div>    
+        </div>
+        <div class="care-hero-img">
+            <img src="./images/homecare.png">
+        </div>
+    </div>
+    </div>
+
+     <section id="about">
+      <div id="banner">
+        <div>
+          <h1>
+            Welcome to Care Sathi: <br />
+            Your <strong>Trusted</strong> Companion in Care
+          </h1>
+        </div>
+
+        <div>
+          <p>
+            At Care Saathi, we understand the importance of compassionate and
+            reliable care for your loved ones. Whether you’re looking for professional caregivers,
+            experienced nurses, or quality medical equipment, we are here to support you every step of the way.
+          </p>
+        </div>
+      </div>
+
+      <span class="heading1" ><h1 style="text-align: center;
+    padding-top: 40px;color:#fc6c24">OUR SERVICES</h1></span>
+      <div class="service-whole-item-1">
+          <div class="service-container-1">
+      <div class="service-title">Caregivers for Home Care</div>
+              <div class="service-description">
+              Our trained and vetted caregivers provide personalized care to meet the
+              unique needs of the elderly, patients recovering from surgery, or those
+              managing chronic illnesses. Assistance with daily activities (bathing,
+              grooming, feeding).
+              </div>
+              <div class="points">
+              <div class="bullet-point-1">
+                  <img src="./images/a.png" />
+                  <span>Assistance with feeding and personal hygiene needs</span>
+                  <hr>
+              </div>
+              <hr>
+              <div class="bullet-point-1">
+                  <img src="./images/b.png" />
+                  <span>Companionship and emotional support</span>
+              </div>
+              <hr>
+              <div class="bullet-point">
+                  <img src="./images/c.png" />
+                  <span>Medication reminders</span>
+              </div>
+              <hr>
+              <div class="bullet-point">
+                  <img src="./images/d.png" />
+                  <span>Monitoring health and well-being</span>
+              </div>
+              <hr>
+              <div class="bullet-point">
+                  <img src="./images/R.png" />
+                  <span>Mobility assistance</span>
+              </div>
+              </div>
+              <a href="#contact" class="enquire-button" style="text-decoration:none;">Enquire Now</a>
+          </div>
+          <div class="service-hero-img-1">
+              <img src="./images/caregiver_1.png">
+
+              <div class="nurse-faq">
+                  <div class="faq-item" style="max-width: 100%;">
+                      <button class="faq-button">
+                          MAJOR DON'TS
+                        <span class="arrow">+</span>
+                      </button>
+                      <div class="answer">Our caregivers focus solely on providing compassionate and specialized care for the individual in need but do not perform medical procedures such as Ryle's or IV tube feeding, administering injections, or surgical tasks. They are also not responsible for household duties like washing family clothes, cleaning the house or washrooms or preparing meals for the family ensuring their attention remains dedicated to the patient’s well-being and comfort.</div>
+                    </div>
+                  </div>
+          </div>
+      </div>
+       
+      <div class="service-whole-item-2">
+          <div class="service-container-2">
+              <div class="service-title">Nurses at Home</div>
+              <div class="service-description">
+                  Get professional nursing care in the comfort of your home. Our experienced nurses are equipped to handle a wide range of medical needs, including:
+              </div>
+              <div class="points">
+              <div class="bullet-point">
+                  <img src="./images/F.png" />
+                  <span>Post-surgical care</span>
+              </div>
+              <hr>
+              <div class="bullet-point">
+                  <img src="./images/G.png" />
+                  <span>Wound management and dressing</span>
+              </div>
+              <hr>
+              <div class="bullet-point">
+                  <img src="./images/H.png" />
+                  <span>IV administration and injections</span>
+              </div>
+              <hr>
+              <div class="bullet-point">
+                  <img src="./images/I.png" />
+                  <span>Catheterisation</span>
+              </div>
+              <hr>
+              <div class="bullet-point">
+                  <img src="./images/J.png" />
+                  <span>Vital checks and vaccinations</span>
+              </div>
+              <hr>
+              <div class="bullet-point-1">
+                  <img src="./images/K.png" />
+                  <span>Managing chronic conditions like diabetes and hypertension</span>
+              </div>
+              </div>
+              <a href="#contact" class="enquire-button" style="text-decoration:none;">Enquire Now</a>
+
+          </div>
+          <div class="service-hero-img-2">
+              <img src="./images/nurses.png">
+              
+          </div>
+      </div>
+
+      <div class="service-whole-item-1">
+          <div class="service-container-1">
+              <div class="service-title">Attendant at Home</div>
+              <div class="service-description">
+                  We provide dedicated and trained attendants for assistance and support for individuals who require help with daily living activities. Whether it is for the elderly, people recovering from surgery, or those managing chronic illnesses. A home attendant ensures comfort, safety, and convenience in the familiar environment of the home.
+              </div>
+              <div class="points">
+              <div class="bullet-point">
+                  <img src="./images/P.png" />
+                  <span>Personal Care Assistance</span>
+              </div>
+              <hr>
+
+              <div class="bullet-point">
+                  <img src="./images/R.png" />
+                  <span>Mobility Support</span>
+              </div>
+              <hr>
+
+              <div class="bullet-point">
+                  <img src="./images/Q.png" />
+                  <span>Feeding and Nutrition</span>
+              </div>
+              <hr>
+
+              <div class="bullet-point">
+                  <img src="./images/S.png" />
+                  <span>Adherence to prescribed medicine plans</span>
+              </div>
+              <hr>
+
+              <div class="bullet-point">
+                  <img src="./images/T.png" />
+                  <span>Light household Assistance</span>
+              </div>
+              </div>
+              <a href="#contact" class="enquire-button" style="text-decoration:none;">Enquire Now</a>
+
+          </div>
+          <div class="service-hero-img-1">
+              <img src="./images/attendant.png">
+          
+          <div class="nurse-faq">
+          <div class="faq-item" style="max-width: 100%;">
+              <button class="faq-button">
+                  MAJOR DON'TS
+                <span class="arrow">+</span>
+              </button>
+              <div class="answer">Our home attendants are dedicated to providing personalized care for individuals in need, but they do not perform medical procedures such as IV tube feeding, administering injections, or any surgical tasks. Additionally, they are not responsible for household chores like washing family clothes, cleaning the house or washrooms or preparing meals for the family ensuring their focus remains solely on the patient's well-being.
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+       
+      <div class="service-whole-item-2">
+          <div class="service-container-2">
+              <div class="service-title">Medical Equipment Rentals and Sales</div>
+              <div class="service-description">
+                  We provide high-quality medical equipment for short-term and long-term needs. From mobility aids to respiratory equipment, our products ensure comfort and safety.
+              </div>
+              <div class="points">
+              <div class="bullet-point">
+                  <img src="./images/l.png" />
+                  <span>Wheelchairs and walkers</span>
+              </div>
+              <hr>
+
+              <div class="bullet-point">
+                  <img src="./images/m.png" />
+                  <span>Hospital beds</span>
+              </div>
+              <hr>
+
+              <div class="bullet-point-1">
+                  <img src="./images/n.png" />
+                  <span>Oxygen concentrators and nebulizers</span>
+              </div>
+              <hr>
+
+              <div class="bullet-point">
+                  <img src="./images/o.png" />
+                  <span>CPAP machines</span>
+              </div>
+
+              </div>
+              <a href="#contact" class="enquire-button" style="text-decoration:none;">Enquire Now</a>
+
+          </div>
+          <div class="service-hero-img-2">
+              <img src="./images/medical equip.png">
+          </div>
+      </div>                
+  </section>
+    </section>
+
+    <section id="approach"></section>
+    <span class="heading1"><h1 style="color:#fc6c24; text-align: center;
+    padding-top: 40px;">WHY CHOOSE CARE SAATHI?</h1></span
+    >
+
+    <section class="approach">
+      <div class="approach-img">
+        <img src="./images/caresaathi.png" alt="hero" />
+      </div>
+      <div class="approach-right">
+        <div class="approach-bullet">
+          <img src="/images/1.png" /><span class="approach-text">
+            <span class="approach-title">Professionals</span><br />
+            <span class="approach-description"
+              >Our caregivers and nurses are trained, certified, and
+              compassionate.</span
+            ></span
+          >
+        </div>
+        <div class="approach-bullet">
+          <img src="/images/2.png" /><span class="approach-text">
+            <span class="approach-title">Tailored Solutions</span><br />
+            <span class="approach-description"
+              >We design care plans that suit your specific requirements.</span
+            ></span
+          >
+        </div>
+        <div class="approach-bullet">
+          <img src="/images/3.png" /><span class="approach-text">
+            <span class="approach-title">Affordable Services</span><br />
+            <span class="approach-description"
+              >Quality care shouldn’t be a luxury. We ensure our services are
+              budget-friendly.</span
+            ></span
+          >
+        </div>
+        <div class="approach-bullet">
+          <img src="/images/4.png" /><span class="approach-text">
+            <span class="approach-title">24/7 Support</span>
+            <span class="approach-description"
+              >Our team is always available to assist you.</span
+            ></span
+          >
+        </div>
+      </div>
+    </section>
+    <span class="approach-center">
+      Trust 
+      <span style="color:#fc6c24; margin: 0 5px; white-space: nowrap;">
+        <strong>Care Saathi</strong>
+      </span> 
+      to look after your Parents when you can't.
+     </span>
+     <div class="container-works">
+      <section
+        class="how-it-works"
+        style="text-align: center; margin-top: 40px"
+      >
+        <h2 class="work-header"style="color: #ff6600; text-align: center;
+    padding-top: 40px;">How It Works</h2>
+        <div class="steps">
+          <div class="step">
+            <div style="position: relative; margin-bottom: 20px">
+              <div class="left-circle">
+                <img src="./images/contact us.png" alt="Left Circle Image" />
+              </div>
+              
+            </div>
+            <h3 style="margin-top: 140px">Contact Us</h3>
+            <p style="font-size: 14px; color: #666">
+              Reach out via phone, email, or our online form to discuss your needs.
+            </p>
+          </div>
+          <div class="step">
+            <div style="position: relative; margin-bottom: 20px">
+              <div class="left-circle">
+                <img src="./images/consultation.png" alt="Left Circle Image" />
+              </div>
+              
+            </div>
+            <h3 style="margin-top: 140px">Consultation</h3>
+            <p style="font-size: 14px; color: #666">
+              Our experts will guide you in choosing the right service or equipment.
+            </p>
+          </div>
+          <div class="step">
+            <div style="position: relative; margin-bottom: 20px">
+              <div class="left-circle">
+                <img src="./images/care begins.png" alt="Left Circle Image" />
+              </div>
+              
+            </div>
+            <h3 style="margin-top: 140px">Care Begins</h3>
+            <p style="font-size: 14px; color: #666">
+              Receive reliable, personalized care at home.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section id="faqs"></section>
+        <div class="container-faq">
+    <span class="heading2"><h1  style="text-align: center;
+    padding-top: 40px;">FAQs</h1></span>
+    <section class="faq">
+              <div class="faq-container">
+                <div class="faq-item">
+                  <button class="faq-button">
+                    What are the benefits of choosing home healthcare?
+                    <span class="arrow">+</span>
+                  </button>
+                  <div class="answer">
+                    Home healthcare provides personalized care, comfort, and convenience, allowing patients to recover faster while staying close to their loved ones.
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-button">
+                    Can I get short-term home healthcare services?
+                    <span class="arrow">+</span>
+                  </button>
+                  <div class="answer">
+                    Yes, home healthcare services can be tailored for short-term needs based on the patient’s condition and recovery plan.
+                  </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-button">
+                        How are caregivers and nurses selected?
+                      <span class="arrow">+</span>
+                    </button>
+                    <div class="answer">
+                        All caregivers and nurses are thoroughly vetted, professionally trained, and certified to ensure reliable and high-quality care.
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <button class="faq-button">
+                        What services are included in home healthcare?
+                      <span class="arrow">+</span>
+                    </button>
+                    <div class="answer">
+                        Services typically include wound care, medication administration, nursing, and assistance with daily activities, among others.
+                    </div>
+                  </div>
+              </div>
+            </section>
+          </div>
+    <script>
+      document.querySelectorAll(".faq-button").forEach((button) => {
+        button.addEventListener("click", () => {
+          const answer = button.nextElementSibling;
+          const arrow = button.querySelector(".arrow");
+
+          if (answer.style.display === "block") {
+            answer.style.display = "none";
+            arrow.style.transform = "rotate(0deg)";
+          } else {
+            answer.style.display = "block";
+            arrow.style.transform = "rotate(45deg)";
+          }
+        });
+      });
+    </script>
+
+    <div id="popup" class="popup">
+      <div class="form-container">
+        <button class="close-button" onclick="closePopup()">×</button>
+        <form id="popup-enquiry-form" method="post">
+          <h3 class="popup-header">REQUEST A CALL BACK</h3>
+          <input type="text" name="Name" placeholder="Name" required /> <br />
+          <input
+            id="phone"
+            name="Mobile"
+            type="tel"
+            placeholder="Mobile Number"
+            required
+            style="width: 100%"
+          /><br />
+          <input type="email" name="Email" placeholder="Email" required /><br />
+          <select name="Services" required>
+            <option value="" disabled selected>Select Service</option>
+            <option value="Nursing">Nursing</option>
+            <option value="Medical Equipment">Medical Equipment</option>
+            <option value="Attendant">Attendant</option>
+            <option value="Caregiver">Caregiver</option></select
+          ><br />
+          <input
+            type="text"
+            name="Address"
+            placeholder="Location"
+            required
+          /><br />
+          <input type="submit" value="Submit" />
+        </form>
+        <button class="close-none">×</button>
+      </div>
+    </div>
+    <section id="contact">
+      <div class="background">
+        <div class="form-container-main">
+          <span class="hero">Enquire</span>
+          <form id="enquiry-form" method="post">
+            <input
+              type="text"
+              class="enquiry-input"
+              name="name"
+              placeholder="Name"
+              required
+            />
+            <input
+              id="phone"
+              class="enquiry-input"
+              name="phone"
+              type="tel"
+              placeholder="Mobile Number"
+              required
+              style="width: 100%"
+            />
+            <input
+              type="email"
+              class="enquiry-input"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <select
+              class="enquiry-input"
+              style="width: 115%; max-width: 115%; color: #a1a19c"
+              name="services"
+              required
+            >
+              <option value="" disabled selected>Select Service</option>
+              <option value="Nursing">Nursing</option>
+              <option value="Medical Equipment">Medical Equipment</option>
+              <option value="Attendant">Attendant</option>
+              <option value="Caregiver">Caregiver</option>
+            </select>
+            <input
+              class="enquiry-input"
+              type="text"
+              name="add"
+              placeholder="Location"
+              required
+            /><br />
+            <input class="enquiry-input" type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img
+            src="./images/logo.png"
+            alt="Care Sathi Logo"
+            class="logo-img"
+          />
+        </div>
+        <p class="footer-text">Your Trusted Partner in Home Healthcare</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/care.saathi24x7/" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/profile.php?id=61571992520106" aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" aria-label="Phone"
+            ><i class="fas fa-phone-alt" onclick="copy()"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-database-compat.js"></script>
+    <script src="./Logics/script.js"></script>
+  </body>
+</html>
