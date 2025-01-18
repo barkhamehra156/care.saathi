@@ -171,9 +171,9 @@ header {
   }
 
   .logo img {
-    height: 50px; /* Adjust size for smaller screens */
-    width: 50px;
-    padding-right: 210px;
+    height: 80px; /* Adjust size for smaller screens */
+    width: 80px;
+    padding-right: 200px;
   }
 
   /* Phone number on the right */
@@ -445,6 +445,7 @@ header {
 .popup-header {
   color: #fc6c24;
 }
+
 .popup:focus-within ~ #overlay {
   background: rgba(0, 0, 0, 0.7);
 }
@@ -556,12 +557,22 @@ header {
   box-sizing: border-box;
   text-align: center;
 }
-
-#banner div {
+.banner-heading {
   width: 50%;
   float: left;
   padding: 20px;
+  padding-bottom: 0;
   box-sizing: border-box;
+  justify-content: flex-end;
+  display: flex;
+}
+.banner-description {
+  width: 40%;
+  float: left;
+  padding: 20px;
+  box-sizing: border-box;
+  justify-content: flex-start;
+  display: flex;
 }
 
 #banner h1 {
@@ -593,6 +604,9 @@ header {
   #banner p {
     font-size: 1rem;
     margin-left: 0;
+  }
+  .popup-header{
+    font-size: 16px;
   }
 }
 
