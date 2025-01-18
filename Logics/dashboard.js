@@ -11,14 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Firebase Configuration
     const firebaseConfig = {
-      apiKey: "AIzaSyBlLTh5ReW7BqXOCcpcs-_IYVwvCwfDbtI",
-      authDomain: "landing-demo-28d4c.firebaseapp.com",
-      databaseURL: "https://landing-demo-28d4c-default-rtdb.firebaseio.com",
-      projectId: "landing-demo-28d4c",
-      storageBucket: "landing-demo-28d4c.appspot.com",
-      messagingSenderId: "578703396014",
-      appId: "1:578703396014:web:8dde8338e536f3ed85313f",
-      measurementId: "G-N1RC29SZ50",
+      apiKey: "AIzaSyDP84X-vZKmKaB26tcTEziHUBOaX2tuDmw",
+      authDomain: "care-saathi-eb157.firebaseapp.com",
+      databaseURL: "https://care-saathi-eb157-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "care-saathi-eb157",
+      storageBucket: "care-saathi-eb157.firebasestorage.app",
+      messagingSenderId: "592718953578",
+      appId: "1:592718953578:web:04d44c42f9995b1b109e13"
     };
   
     firebase.initializeApp(firebaseConfig);
