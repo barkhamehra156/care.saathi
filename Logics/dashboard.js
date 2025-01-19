@@ -54,9 +54,10 @@ document.addEventListener("DOMContentLoaded", () => {
           <tr>
             <td>${data.name}</td>
             <td>${data.mobile}</td>
-            <td>${data.email}</td>
-            <td>${data.service}</td>
-            <td>${data.location}</td>
+            <td>${data.email ?? '--'}</td>
+            <td>${data.service ?? '--'}</td>
+            <td>${data.datetime ?? '--'}</td>
+            <td>${data.location ?? '--'}</td>
           </tr>
         `;
         tableBody.innerHTML += row;

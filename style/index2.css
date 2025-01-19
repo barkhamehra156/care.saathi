@@ -85,6 +85,24 @@ select {
   width: 100%;
 }
 
+.privacy {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.privacy-content{
+  width: 80%;
+  text-align: justify;
+}
+
+.privacy h3{
+  color: #ff6600;
+  text-align: justify;
+  padding-top: 10px;
+}
+
 /* form */
 .background {
   background: url("../images/landing-page-design_2.jpg") no-repeat center center;

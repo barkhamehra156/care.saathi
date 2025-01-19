@@ -6,9 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       const name = document.querySelector("input[name='name']").value;
       const mobile = document.querySelector("input[name='phone']").value;
-      const email = document.querySelector("input[name='email']").value;
-      const service = document.querySelector("select[name='services']").value;
-      const location = document.querySelector("input[name='add']").value;
+      const email_input = document.querySelector("input[name='Email']");
+      const email= email_input ? email_input.value : null;
+      const service_input = document.querySelector("select[name='Services']");
+      const service= service_input ? service_input.value : null;
+      const location_input = document.querySelector("input[name='Address']");
+      const location= location_input ? location_input.value : null;
   
       // Firebase Configuration
       const firebaseConfig = {
@@ -32,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
           email: email,
           service: service,
           location: location,
+          datetime: new Date().toLocaleString().replace(',',''),
         })
         .then(() => {
           alert("Your enquiry has been submitted successfully!");
@@ -52,9 +56,12 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       const name = document.querySelector("input[name='Name']").value;
       const mobile = document.querySelector("input[name='Mobile']").value;
-      const email = document.querySelector("input[name='Email']").value;
-      const service = document.querySelector("select[name='Services']").value;
-      const location = document.querySelector("input[name='Address']").value;
+      const email_input = document.querySelector("input[name='Email']");
+      const email= email_input ? email_input.value : null;
+      const service_input = document.querySelector("select[name='Services']");
+      const service= service_input ? service_input.value : null;
+      const location_input = document.querySelector("input[name='Address']");
+      const location= location_input ? location_input.value : null;
   
       // Firebase Configuration
       const firebaseConfig = {
@@ -78,6 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
           email: email,
           service: service,
           location: location,
+          datetime: new Date().toLocaleString().replace(',',''),
         })
         .then(() => {
           alert("Your enquiry has been submitted successfully!");
